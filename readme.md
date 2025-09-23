@@ -2,7 +2,7 @@
 
 **Duration:** 22-09-2025 to 24-09-2025  
 **Tech Stack:** Next.js 15, React.js, TailwindCSS, Node.js, Express.js, MongoDB  
-**Author:** [Your Name]  
+**Author:** Dhiraj Manoj Bhawsar
 
 ---
 
@@ -206,11 +206,6 @@ npm run dev
 - **Styling:** TailwindCSS v4 for modern, responsive UI.
 - **Charting:** Recharts for simple, lightweight task summaries.
 - **Code Quality:** Adhered to SOLID, DRY, and YAGNI principles.
-
----
-
-## 🎥 Demo
-Demo video link: [Insert your video link here]
 
 ---
 
