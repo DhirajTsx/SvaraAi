@@ -59,7 +59,7 @@ export default function ProjectsPage() {
     if (!token) return;
     setFetching(true);
     try {
-      const res = await fetch("http://localhost:5000/api/projects", {
+      const res = await fetch("https://svara-ai-psi.vercel.app/api/projects", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -96,7 +96,7 @@ export default function ProjectsPage() {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/projects", {
+      const res = await fetch("https://svara-ai-psi.vercel.app/api/projects", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
   const handleDeleteProject = async (id: string) => {
     if (!token) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/projects/${id}`, {
+      const res = await fetch(`https://svara-ai-psi.vercel.app/api/projects/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

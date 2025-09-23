@@ -82,7 +82,7 @@ export default function KanbanPage({
 
     const fetchTasks = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/tasks/${id}`, {
+        const res = await fetch(`https://svara-ai-psi.vercel.app/api/tasks/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -138,7 +138,7 @@ export default function KanbanPage({
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/tasks", {
+      const res = await fetch("https://svara-ai-psi.vercel.app/api/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -195,7 +195,7 @@ export default function KanbanPage({
       normalizedStatus === "inprogress" ? "in-progress" : normalizedStatus;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+      const res = await fetch(`https://svara-ai-psi.vercel.app/api/tasks/${taskId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -242,7 +242,7 @@ export default function KanbanPage({
     if (!token) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/tasks/${taskId}`, {
+      const res = await fetch(`https://svara-ai-psi.vercel.app/api/tasks/${taskId}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
